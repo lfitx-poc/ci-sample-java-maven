@@ -26,6 +26,7 @@ publish:
   stage: release
   image: maven:$MAVEN_IMAGE_TAG
   script:
+    - env
     - mvn $MAVEN_CLI_OPTS clean deploy
   only:
     - master
