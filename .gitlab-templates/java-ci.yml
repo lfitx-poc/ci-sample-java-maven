@@ -27,6 +27,6 @@ publish:
   image: maven:$MAVEN_IMAGE_TAG
   script:
     - env
-    - mvn $MAVEN_CLI_OPTS clean deploy
+    - mvn $MAVEN_CLI_OPTS clean deploy -DrepositoryId=gitlab-maven
   only:
     - master
