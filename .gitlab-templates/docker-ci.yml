@@ -13,4 +13,4 @@ docker-publish:
   services:
   - docker:dind
   script:
-  - docker push ${CI_PROJECT_NAME}
+    - docker push ${CI_PROJECT_NAME}:latest
