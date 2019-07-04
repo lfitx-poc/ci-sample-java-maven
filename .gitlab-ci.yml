@@ -10,4 +10,4 @@ stages:
   - docs
 
 include:
-  - local: .gitlab-templates/rtd-ci.yml
+  - local: .gitlab-templates/docker-ci.yml
