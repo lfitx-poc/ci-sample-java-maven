@@ -2,12 +2,8 @@
 image: alpine:latest
 
 stages:
-  - verify
   - build
-  - test
-  - stage
-  - release
-  - docs
+  - publish
 
 include:
   - local: .gitlab-templates/docker-ci.yml
