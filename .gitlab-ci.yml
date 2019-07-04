@@ -4,6 +4,7 @@ image: alpine:latest
 stages:
   - build
   - publish
+  - docker
 
 include:
   - local: .gitlab-templates/docker-ci.yml
