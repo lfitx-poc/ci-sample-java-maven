@@ -3,7 +3,8 @@ image: alpine:latest
 
 stages:
   - build
-  - publish
+  - test
+  - release
   - docker
 
 include:
