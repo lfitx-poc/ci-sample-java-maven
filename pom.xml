@@ -15,4 +15,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+        <id>gitlab</id>
+        <name>${env.MAVEN_RELEASE_REPO}</name>
+        <url>${env.MAVEN_RELEASE_REPO_URL}</url>
+    </repository>
+    <snapshotRepository>
+        <id>gitlab</id>
+        <name>${env.MAVEN_SNAPSHOT_REPO}</name>
+        <url>${env.MAVEN_SNAPSHOT_REPO_URL}</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
